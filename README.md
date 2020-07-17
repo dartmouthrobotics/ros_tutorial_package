@@ -4,6 +4,8 @@ Example of a package for running a ROS nodes.
 
 This is a work in progress. Feel free to ask for more explanations, tutorials, and examples.
 
+NOTE: this example is for python based packages. There is slight differences when writing C++ ROS packages. If you want an example, feel free to reach out.
+
 [Dartmouth Reality and Robotics Lab](http://rlab.cs.dartmouth.edu/home/)
 
 Author: Monika Roznere
@@ -22,9 +24,9 @@ cd catkin_ws/src
 
 No unique depencencies are required.
 
-However, here one would list the required dependencies for your package. No need to include `rospy` or other simple ROS related packages. Instead List packages or libraries that are typically not installed with Python or ROS.
+However, here one would list the required dependencies for your package. No need to include `rospy` or other simple ROS related packages. Instead list packages or libraries that are typically not installed with Python or ROS.
 
-Examples:
+Examples (NOT REQUIRED HERE):
 
 * openCV
 ```
@@ -32,7 +34,7 @@ pip install opencv-python
 ```
 
 * [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2)
-Orother ROS packages required in the `catkin_ws`
+Or other ROS packages required in the `catkin_ws`
 
 * mention that Gazebo, Stage, or another simulator is required
 
@@ -47,13 +49,13 @@ sudo apt-get build-dep python-matplotlib
 Clone the repository. Then build and source:
 ```
 cd catkin_ws/src
-git clone https://github.com/dartmouthrobotics/tutorial_package.git
+git clone https://github.com/dartmouthrobotics/ros_tutorial_package.git
 cd ..
 catkin_make
 source devel/setup.bash
 ```
 
-Check if the `start_example.py` file in `scripts` folder executable. Scripts called by launch files must be an executable. All other scripts that are used (imported) by the executable scripts must be in `src\<package_name>` directory. They do not have to be an executable.
+Check if the `start_example.py` file in `scripts` folder is executable. Scripts called by launch files must be an executable. All other scripts that are used (imported) by the executable scripts must be in `src\<package_name>` directory. They do not have to be an executable.
 
 To check either:
 * use command `ls` and see if the file is displayed with green font
@@ -79,12 +81,12 @@ Check out the scripts for how they are used.
 
 To set parameters, in a new terminal tab:
 ```
-rosparam set \<parameter_name> <value>
+rosparam set /<parameter_name> <value>
 ```
 
 Example:
 ```
-rosparam set \rate 5
+rosparam set /rate 5
 ```
 
 To run a launch file:

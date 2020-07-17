@@ -20,7 +20,7 @@ class Interface:
         if rospy.has_param('out_file'):
             self.OUT_FILE = rospack.get_path('ros_tutorial_package') + "/data/" + rospy.get_param('out_file')
         else:
-            self.OUT_FILE = rospack.get_path('ros_tutorial_package') + "/data/data.txt"
+            self.OUT_FILE = rospack.get_path('ros_tutorial_package') + "/data/test.txt"
         rospy.loginfo("ROS param 'out_file' set to: " + str(self.OUT_FILE))
 
         # Clear contents of out file.
