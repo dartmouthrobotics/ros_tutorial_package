@@ -91,7 +91,7 @@ rosparam set /rate 5
 
 To run a launch file:
 ```
-roslaunch tutorial_package example.launch
+roslaunch ros_tutorial_package example.launch
 ```
 
 ## Formatting
@@ -107,7 +107,7 @@ catkin_make roslint_<package_name>
 
 Example:
 ```
-catkin_make roslint_tutorial_package
+catkin_make roslint_ros_tutorial_package
 ```
 
 
