@@ -1,10 +1,10 @@
 # Tutorial: Example Package
 
-Example of a package for running a ROS nodes.
+Example of a package for running a ROS node.
 
 This is a work in progress. Feel free to ask for more explanations, tutorials, and examples.
 
-NOTE: this example is for python based packages. There is slight differences when writing C++ ROS packages. If you want an example, feel free to reach out.
+NOTE: this example is for python based packages. There are slight differences when writing C++ ROS packages. If you want an example, feel free to reach out.
 
 [Dartmouth Reality and Robotics Lab](http://rlab.cs.dartmouth.edu/home/)
 
