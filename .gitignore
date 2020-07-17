@@ -1,0 +1,5 @@
+src/ros_tutorial_package/*.pyc
+data/*.txt
+
+# usually .gitignore should also be in this list so that users do not see it
+# .gitignore

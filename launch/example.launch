@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- Starts a new node with given "name". Node is running the script "type" in "package". -->
+  <!-- output="screen" is required if you want print statements to show in terminal. -->
+  <node pkg="ros_tutorial_package" name="package_example" type="start_example.py" output="screen" />
+
+</launch>
